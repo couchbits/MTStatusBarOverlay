@@ -78,9 +78,9 @@ MAX([UIApplication sharedApplication].statusBarFrame.size.width, [UIApplication 
 // Dark Theme (for UIStatusBarStyleBlackOpaque)
 ///////////////////////////////////////////////////////
 
-#define kDarkThemeTextColor							[UIColor colorWithRed:0.749f green:0.749f blue:0.749f alpha:1.0f]
-#define kDarkThemeErrorMessageTextColor             [UIColor colorWithRed:0.749f green:0.749f blue:0.749f alpha:1.0f] // [UIColor colorWithRed:0.918367f green:0.48385f blue:0.423895f alpha:1.0f]
-#define kDarkThemeFinishedMessageTextColor          [UIColor colorWithRed:0.749f green:0.749f blue:0.749f alpha:1.0f] // [UIColor colorWithRed:0.681767f green:0.918367f blue:0.726814f alpha:1.0f]
+#define kDarkThemeTextColor							[UIColor colorWithRed: 252.0f/255.0f green: 30/255.0f blue: 112/255.0f alpha: 1]
+#define kDarkThemeErrorMessageTextColor             [UIColor colorWithRed: 252.0f/255.0f green: 30/255.0f blue: 112/255.0f alpha: 1] // [UIColor colorWithRed:0.918367f green:0.48385f blue:0.423895f alpha:1.0f]
+#define kDarkThemeFinishedMessageTextColor          [UIColor colorWithRed: 252.0f/255.0f green: 30/255.0f blue: 112/255.0f alpha: 1] // [UIColor colorWithRed:0.681767f green:0.918367f blue:0.726814f alpha:1.0f]
 #define kDarkThemeActivityIndicatorViewStyle		UIActivityIndicatorViewStyleWhite
 #define kDarkThemeDetailViewBackgroundColor			[UIColor colorWithRed:0.3f green:0.3f blue:0.3f alpha:1.0f]
 #define kDarkThemeDetailViewBorderColor				[UIColor whiteColor]
@@ -91,7 +91,7 @@ MAX([UIApplication sharedApplication].statusBarFrame.size.width, [UIApplication 
 ///////////////////////////////////////////////////////
 
 #define kProgressViewAlpha                          0.4f
-#define kProgressViewBackgroundColor                [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.0f]
+#define kProgressViewBackgroundColor                [UIColor colorWithRed: 252.0f/255.0f green: 30/255.0f blue: 112/255.0f alpha: 1]
 
 
 ///////////////////////////////////////////////////////
@@ -125,7 +125,7 @@ MAX([UIApplication sharedApplication].statusBarFrame.size.width, [UIApplication 
 ///////////////////////////////////////////////////////
 
 // Text that is displayed in the finished-Label when the finish was successful
-#define kFinishedText		@"✓"
+#define kFinishedText		@""
 #define kFinishedFontSize	22.f
 
 // Text that is displayed when an error occured
@@ -305,7 +305,7 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
         
 		// the detail view that is shown when the user touches the status bar in animation mode "FallDown"
 		detailView_ = [[UIView alloc] initWithFrame:kDefaultDetailViewFrame];
-		detailView_.backgroundColor = [UIColor blackColor];
+		detailView_.backgroundColor = [UIColor colorWithRed: 252 green: 30 blue: 112 alpha: 1];
 		detailView_.alpha = kDetailViewAlpha;
 		detailView_.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
 		detailViewMode_ = MTDetailViewModeCustom;
@@ -1187,7 +1187,7 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 
 - (void)setStatusBarBackgroundForStyle:(UIStatusBarStyle)style {
     self.statusBarBackgroundImageView.image = nil;
-    statusBarBackgroundImageView_.backgroundColor = [UIColor colorWithRed: 248.0f/255.0f green: 248.0f/255.0f blue: 248.0f/255.0f alpha: 1];
+    statusBarBackgroundImageView_.backgroundColor = [UIColor colorWithRed: 246.0f/255.0f green: 246.0f/255.0f blue: 246.0f/255.0f alpha: 1];
 
 }
 
